@@ -3,7 +3,7 @@
   connection: local
   tasks:
   -  name: "install programs on virtual machine"
-    apt:
+     apt:
       pkg:
       - python3-pip
       - code
