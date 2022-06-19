@@ -16,4 +16,5 @@
       repo: "https://github.com/2206-devops-batch/JoseR-project0"
       dest: /src/projects
       version: master
+    become: true
 
