@@ -11,6 +11,10 @@
       state: latest
     become: true
     
+  - name: "install python 3 using raw"
+    raw: yum -y install python
+
+
   - name: "pull repo to add this playbook repository"
     git:
       repo: "https://github.com/2206-devops-batch/JoseR-project0" 
