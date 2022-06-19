@@ -13,7 +13,7 @@
     
   - name: "install python 3 using raw"
     raw: 
-      yum: -y install python
+      dnf: install -y python3
 
 
   - name: "pull repo to add this playbook repository"
