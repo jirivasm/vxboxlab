@@ -11,7 +11,7 @@
     become: true
 
   - name: install Python3
-    yum:
+    dnf:
       name: Python3
       state: latest
     
