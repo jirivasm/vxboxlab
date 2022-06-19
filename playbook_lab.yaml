@@ -9,12 +9,10 @@
       - docker
       - docker-compose
       state: latest
+    apt-get:
+      install python3 
     become: true
     
-  - name: "install python 3 using raw"
-    raw: 
-      dnf: install -y python3
-
 
   - name: "pull repo to add this playbook repository"
     git:
