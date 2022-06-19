@@ -2,15 +2,15 @@
 - hosts: localhost
   connection: local
   tasks:
-  -  name: "install programs on virtual machine"
-      apt:
-        pkg:
-        - python3-pip
-        - code
-        - docker
-        - docker-compose
-        state: latest
-      become: true
+  - name: "install programs on virtual machine"
+    apt:
+      pkg:
+      - python3-pip
+      - code
+      - docker
+      - docker-compose
+      state: latest
+    become: true
     
   - name: "pull repo to add this playbook repository"
     git:
