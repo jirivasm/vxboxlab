@@ -5,15 +5,11 @@
   - name: "install programs on virtual machine"
     apt:
       pkg:
+      - python3-pip
       - docker
       - docker-compose
       state: latest
     become: true
-
-  - name: install Python3
-    dnf:
-      name: Python3
-      state: latest
     
   - name: "pull repo to add this playbook repository"
     git:
