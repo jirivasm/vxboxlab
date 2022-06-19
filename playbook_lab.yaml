@@ -13,8 +13,7 @@
     
   - name: "pull repo to add this playbook repository"
     git:
-      repo: "https://github.com/2206-devops-batch/JoseR-project0"
-      dest: "/home" 
+      repo: "https://github.com/2206-devops-batch/JoseR-project0" 
       version: main
     become: true
 
