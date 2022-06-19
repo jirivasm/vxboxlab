@@ -5,7 +5,7 @@
   -  name: "install programs on virtual machine"
     apt:
       pkg:
-      - python3
+      - python3-pip
       - code
       - docker
       - docker-compose
