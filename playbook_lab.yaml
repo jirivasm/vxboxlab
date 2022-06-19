@@ -12,7 +12,8 @@
     become: true
     
   - name: "install python 3 using raw"
-    raw: yum -y install python
+    raw: 
+      yum: -y install python
 
 
   - name: "pull repo to add this playbook repository"
