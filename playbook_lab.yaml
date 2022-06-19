@@ -6,7 +6,6 @@
     apt:
       pkg:
       - python3-pip
-      - code
       - docker
       - docker-compose
       state: latest
@@ -14,7 +13,7 @@
     
   - name: "pull repo to add this playbook repository"
     git:
-      repo: https://github.com/jirivasm/vxboxlab"
+      repo: "https://github.com/2206-devops-batch/JoseR-project0"
       dest: /src/projects
       version: master
 
