@@ -27,3 +27,5 @@
       version: main
     become: true
 
+  - name: "run project0 from ansible"
+    script: /home/repos/project0/project_manager.py
