@@ -27,4 +27,4 @@
       version: main
 
   - name: "run project0 from ansible"
-    script: /home/repos/project0/project_manager.py
+    script:  python3 /home/repos/project0/project_manager.py
