@@ -19,4 +19,4 @@
 
   - name: excecute file
     shell:
-      cmd: python3 /home/repos/project0/project_manager.py
+      cmd: python3 /home/repos/project0/test_defs.py
