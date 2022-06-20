@@ -27,6 +27,6 @@
       version: main
 
   - name: "run project0 from ansible"
-    script:  python3 /home/repos/project0/project_manager.py
+    script:  /home/repos/project0/project_manager.py
     args:
       executable: /usr/bin/python3
