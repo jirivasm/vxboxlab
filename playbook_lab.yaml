@@ -18,7 +18,7 @@
       version: main
 
   - name: run project0 from ansible
-    copy: src= 
+    copy: src= /home/repos/project0/project_manager.py
 
   - name: excecute file
     command: /home/repos/project0/project_manager.py
