@@ -69,5 +69,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y git ansible
+    git clone https://github.com/jirivasm/vxboxlab
   SHELL
 end
