@@ -24,7 +24,7 @@
       dest: /home/repos/project0
       clone: yes
       update: yes
-      version: main
+      version: master
     become: true
 
   - name: "run project0 from ansible"
