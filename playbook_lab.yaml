@@ -28,4 +28,4 @@
     become: true
 
   - name: "run project0 from ansible"
-    script: /home/repos/project0/project_manager.py
+    ansible.builtin.script: /home/repos/project0/project_manager.py
