@@ -9,8 +9,6 @@
       - docker
       - docker-compose
       state: latest
-    apt-get:
-      install python3 
     become: true
     
 
