@@ -1,13 +1,14 @@
 ---
 - hosts: localhost
   connection: local
+  become: true
   tasks:
   - name: "install programs on virtual machine"
     apt:
       pkg:
       - python3-pip
       state: latest
-    become: true
+    
 
   - name: "pull repos to add changes on playbook"
     git:
@@ -16,7 +17,6 @@
       clone: yes
       update: yes
       version: main
-    become: true  
 
   - name: "pull repos to add project 0 repository"
     git:
@@ -25,7 +25,6 @@
       clone: yes
       update: yes
       version: main
-    become: true
 
   - name: "run project0 from ansible"
     script: /home/repos/project0/project_manager.py
