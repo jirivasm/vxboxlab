@@ -8,15 +8,6 @@
       pkg:
       - python3-pip
       state: latest
-    
-
-  - name: "pull repos to add changes on playbook"
-    git:
-      repo: "https://github.com/jirivasm/vxboxlab" 
-      dest: /home/repos/playbook
-      clone: yes
-      update: yes
-      version: main
 
   - name: "pull repos to add project 0 repository"
     git:
@@ -26,7 +17,5 @@
       update: yes
       version: main
 
-  - name: "run project0 from ansible"
-    script:  /home/repos/project0/project_manager.py
-    args:
-      executable: /usr/bin/python3
+  - name: run project0 from ansible
+    command: python3 /home/repos/project0/project_manager.py
