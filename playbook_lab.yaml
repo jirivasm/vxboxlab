@@ -19,4 +19,4 @@
 
   - name: excecute file
     script: /home/repos/project0/project_manager.py
-      executable: /usr/bin/python3
+    executable: /usr/bin/python3
