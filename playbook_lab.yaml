@@ -13,7 +13,6 @@
     git:
       repo: "https://github.com/jirivasm/vxboxlab" 
       dest: /home/repos/playbook
-      pull:
       clone: yes
       update: yes
       version: main
