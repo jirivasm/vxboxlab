@@ -6,8 +6,6 @@
     apt:
       pkg:
       - python3-pip
-      - docker
-      - docker-compose
       state: latest
     become: true
 
