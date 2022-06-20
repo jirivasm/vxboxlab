@@ -13,6 +13,7 @@
     git:
       repo: "https://github.com/jirivasm/vxboxlab" 
       dest: /home/repos/playbook
+      pull:
       clone: yes
       update: yes
       version: main
@@ -24,8 +25,8 @@
       dest: /home/repos/project0
       clone: yes
       update: yes
-      version: master
+      version: main
     become: true
 
   - name: "run project0 from ansible"
-    ansible.builtin.script: /home/repos/project0/project_manager.py
+    script: /home/repos/project0/project_manager.py
