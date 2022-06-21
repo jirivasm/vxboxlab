@@ -17,6 +17,3 @@
       update: yes
       version: main
 
-  - name: excecute file
-    shell:
-      cmd: python3 /home/repos/project0/test_defs.py
